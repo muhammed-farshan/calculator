@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="top">
+        <div id="container">
+           <input id="result" type="text" placeholder="0" readonly class="scnd">
+            <div id="thrd">
+                <div onclick="clcclear()" class="grp1 ">AC</div>
+                <div onclick="removedigit()" class="grp1"><i class="fa-solid fa-square-xmark" id="cross"></i></div>
+                <div onclick="displaycontent('%')" class="grp1">%</div>
+                <div onclick="displaycontent('/')" class="grp1 grp2">/</div>
+                <div onclick="displaycontent('7')" class="grp1">7</div>
+                <div onclick="displaycontent('8')" class="grp1">8</div>
+                <div onclick="displaycontent('9')" class="grp1">9</div>
+                <div onclick="displaycontent('*')" class="grp1 grp2">*</div>
+                <div onclick="displaycontent('4')" class="grp1">4</div>
+                <div onclick="displaycontent('5')" class="grp1">5</div>
+                <div onclick="displaycontent('6')" class="grp1">6</div>
+                <div onclick="displaycontent('-')" class="grp1 grp2">-</div>
+                <div onclick="displaycontent('1')" class="grp1">1</div>
+                <div onclick="displaycontent('2')" class="grp1">2</div>
+                <div onclick="displaycontent('3')" class="grp1">3</div>
+                <div onclick="displaycontent('+')" class="grp1 grp2">+</div>
+                <div onclick="displaycontent('0')"  class="grp1" id="zero">0</div>
+                <div onclick="displaycontent('.')" class="grp1">.</div>
+                <div onclick="calcoutput()" class="grp1 grp2">=</div>
+    
+            </div>
+        </div>
+   </div>
+</body>
+<script src="./main.js"></script>
+</html>
